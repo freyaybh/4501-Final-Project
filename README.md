@@ -1,4 +1,4 @@
-# 4501-Final-Project
+# 4501 Final Project
 ## Group 8 
 UNIs: [wz2616, by2342]
 
