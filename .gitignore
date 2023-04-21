@@ -2,4 +2,12 @@
 *.ipynb_checkpoints*
 __pycache__/
 
+*.parquet
 *.csv
+*.zip
+*.pdf
+*.docx
+.taxi_zones
+.weather
+.taxi
+.sample_taxi
