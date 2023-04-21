@@ -1,0 +1,5 @@
+
+SELECT strftime('%H', Trip_Pickup_DateTime), count(*)
+FROM taxi_trips
+GROUP BY strftime('%H', Trip_Pickup_DateTime)
+ORDER BY count(*) DESC;

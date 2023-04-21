@@ -1,0 +1,25 @@
+
+    WITH hired_trips AS
+    (
+    SELECT 
+        Trip_Pickup_DateTime, 
+        distance
+    FROM
+        taxi_trips
+    WHERE 
+        strftime('%m', Trip_Pickup_DateTime) = "07"
+    AND 
+        strftime('%Y', Trip_Pickup_DateTime) = "2013"
+UNION
+    SELECT
+        Trip_Pickup_DateTime, 
+        distance
+    FROM
+        uber_trips
+    WHERE 
+        strftime('%m', Trip_Pickup_DateTime) = "07"
+    AND 
+        strftime('%Y', Trip_Pickup_DateTime) = "2013"
+    )
+    SELECT distance FROM hired_trips ORDER BY distance
+    LIMIT 1 OFFSET ((select count(*) from hired_trips) * 95/100 -1)    

@@ -1,0 +1,26 @@
+
+    WITH hired_trips AS
+    (
+    SELECT 
+        Trip_Pickup_DateTime, 
+        distance
+    FROM
+        taxi_trips
+    WHERE 
+        strftime('%Y', Trip_Pickup_DateTime) = "2009"
+UNION
+    SELECT
+        Trip_Pickup_DateTime, 
+        distance
+    FROM
+        uber_trips
+    WHERE 
+        strftime('%Y', Trip_Pickup_DateTime) = "2009"
+    )
+    SELECT 
+        date(Trip_Pickup_DateTime), count(*), AVG(distance)
+    FROM hired_trips
+    GROUP BY date(Trip_Pickup_DateTime)
+    ORDER BY count(*) DESC
+    LIMIT 10
+
