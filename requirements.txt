@@ -1,1 +1,21 @@
 # Add your third-party Python libraries here
+math
+jupyter
+beatifulsoup4
+matplotlib
+numpy
+pandas
+geopandas
+requests
+sqlalchemy
+stat
+scipy
+ipywidgets
+datetime
+cufflinks
+plotly
+pyarrow
+re
+datetime
+os
+sqlite3
