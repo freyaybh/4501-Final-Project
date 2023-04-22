@@ -7,4 +7,5 @@ This is the final repository for "Tools for Analytics: Python" project, where we
 
 ## Contribution
 Wanyi Zhang (wz2616): Part1(Taxi Data),Part2(Taxi Data),Part3(Query 1/3/4), Part4(Visualization 1/3/5)
+
 Freya Yuan (by2342):Part1(Uber Data/Weather Data), Part2(Uber Data/Weather Data), Part3(Query 2/5/6), Part4(Visualization 2/4/6)
