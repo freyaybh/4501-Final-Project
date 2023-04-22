@@ -2,7 +2,7 @@
 *.ipynb_checkpoints*
 __pycache__/
 
-*./weather data
+./weather data
 *.parquet
 *.csv
 *.zip
