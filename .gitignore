@@ -12,3 +12,5 @@ __pycache__/
 .weather
 .taxi
 .sample_taxi
+
+*.db
