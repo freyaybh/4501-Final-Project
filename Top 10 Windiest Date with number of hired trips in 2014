@@ -4,7 +4,7 @@
     SELECT DATE(Trip_Pickup_DateTime) AS date 
     FROM taxi_trips
     WHERE date BETWEEN '2014-01-01' AND '2015-01-01'
-UNION
+UNION ALL
     SELECT DATE(Trip_Pickup_DateTime) AS date
     FROM uber_trips
     WHERE date BETWEEN '2014-01-01' AND '2015-01-01'
